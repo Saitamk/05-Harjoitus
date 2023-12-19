@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  font-size: 3rem;
+  background-color: lightsalmon;
+  color: darkmagenta;
+  margin: 1rem;
+  padding: 1rem;
+}
+h1 {
+  background-color: darkmagenta;
+  color: lightsalmon;
+  margin-block-end: 1rem;
+  margin-inline-start: -2rem;
+  margin-block-start: -2rem;
+  margin-block-end: 1rem;
+}
+h2 {
+  font-size: 4.5rem;
+}
+.tabletMode {
+  content-visibility: hidden;
+}
+.desktopMode {
+  content-visibility: hidden;
+}
+
+@media only screen and (min-width: 481px) {
+  .mobileFirst {
+    content-visibility: hidden;
+  }
+  .tabletMode {
+    content-visibility: visible;
+  }
+  body {
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+  }
+  h1 {
+    background-color: darkolivegreen;
+    color: blanchedalmond;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .mobileFirst {
+    content-visibility: hidden;
+  }
+  .tabletMode {
+    content-visibility: hidden;
+  }
+  .desktopMode {
+    content-visibility: visible;
+  }
+  body {
+    background-color: lemonchiffon;
+    color: darkgoldenrod;
+  }
+  h1 {
+    background-color: darkgoldenrod;
+    color: lemonchiffon;
+  }
+}
